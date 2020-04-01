@@ -1,0 +1,82 @@
+/* ==========================================================================
+  c-input
+   ========================================================================== */
+$d-label-color: #222;
+$d-input-color: #222;
+$d-input-placeholder-color: #ccc;
+
+@mixin transition($attr, $duration, $timing) {
+  -webkit-transition: $attr $duration $timing;
+  -moz-transition: $attr $duration $timing;
+  -o-transition: $attr $duration $timing;
+  transition: $attr $duration $timing;
+}
+.control {
+  border-bottom: 1px solid #bbb;
+  position: relative;
+}
+input,
+.input {
+  line-height: 1.5;
+  height: 2.1em;
+  border: none;
+  background-color: #fff;
+  transition: all 0.3s ease-out;
+  margin-top: 20px;
+  padding-left: 6px;
+  // border-radius: .2em;
+  // width: 100%;
+  // padding: .3em .6em;
+  // border: 2px solid #ccc;
+
+  &:focus {
+    // border: 2px solid #aaa;
+    outline: 0;
+  }
+  &:required::placeholder {
+    color: $d-input-placeholder-color;
+  }
+}
+
+label {
+  position: absolute;
+  font-size: 14px;
+  top: 5px;
+  left: 4px;
+  color: $d-label-color;
+}
+
+input:invalid {
+  background: hsla(0, 68%, 42%, 0.5);
+}
+
+input:placeholder-shown + label {
+  opacity: 0;
+}
+
+input:not(:placeholder-shown) + label {
+  opacity: 1;
+  display: block;
+  position: absolute;
+  color: $d-input-color;
+  @include transition(opacity, 0.3s, ease-out);
+  &::after {
+    content: ' *';
+    color: #222;
+  }
+}
+
+input:not(:placeholder-shown):invalid {
+  background: rgba(207, 19, 19, 0.1);
+  @include transition(all, 4s, ease-out);
+}
+// input:not(:placeholder-shown):not(:focus):invalid {
+// 	background: rgba(207, 19, 19, 0.1);
+//     @include transition(all, .3s, ease-out)
+// }
+//TOD: clean up
+select.invalid:invalid,
+input.invalid:invalid {
+  background: hsla(16, 100%, 47%, 0.1);
+  transition: all, 4s, ease-out;
+}
