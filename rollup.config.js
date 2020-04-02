@@ -14,7 +14,7 @@ const productionSite = 'notekar.knight.works'
 const port = 3140
 let authUrl = 'https://auth.knight.works/api/v1'
 
-authUrl = !production ? authUrl : `http://localhost:${port}/api/v1`
+authUrl = production ? authUrl : `http://localhost:${port}/api/v1`
 let apiUrl = production
   ? `https://${productionSite}/api/v1`
   : `http://localhost:${port}/api/v1`

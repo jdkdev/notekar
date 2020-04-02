@@ -2918,7 +2918,7 @@ var app = (function () {
 
     // Move this to .env.js and make changes in rollup.config.js
     var _env = {
-        authUrl: 'https://auth.knight.works/api/v1/login',
+        authUrl: 'http://localhost:3140/api/v1/login',
         apiUrl: 'http://localhost:3140/api/v1'
     };
 
@@ -3814,31 +3814,45 @@ var app = (function () {
     function create_else_block$1(ctx) {
     	let article;
     	let h1;
+    	let span0;
     	let t1;
+    	let span1;
+    	let t3;
     	let h2;
 
     	const block = {
     		c: function create() {
     			article = element("article");
     			h1 = element("h1");
-    			h1.textContent = "<!-- Notekar -->";
-    			t1 = space();
+    			span0 = element("span");
+    			span0.textContent = "<!--";
+    			t1 = text("\n        Notekar\n        ");
+    			span1 = element("span");
+    			span1.textContent = "-->";
+    			t3 = space();
     			h2 = element("h2");
     			h2.textContent = "Make comments at your own risk....";
+    			attr_dev(span0, "class", "font-size-xl");
+    			add_location(span0, file$3, 23, 8, 776);
+    			attr_dev(span1, "class", "font-size-xl");
+    			add_location(span1, file$3, 25, 8, 842);
     			attr_dev(h1, "class", "font-size-xxl");
     			set_style(h1, "font-style", "italic");
-    			add_location(h1, file$3, 22, 6, 717);
+    			add_location(h1, file$3, 22, 6, 715);
     			attr_dev(h2, "class", "pt");
-    			add_location(h2, file$3, 25, 6, 816);
+    			add_location(h2, file$3, 27, 6, 898);
     			set_style(article, "background-color", "#000");
     			set_style(article, "color", "#ccc");
-    			attr_dev(article, "class", "p-xl");
+    			attr_dev(article, "class", "py");
     			add_location(article, file$3, 21, 4, 644);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, article, anchor);
     			append_dev(article, h1);
-    			append_dev(article, t1);
+    			append_dev(h1, span0);
+    			append_dev(h1, t1);
+    			append_dev(h1, span1);
+    			append_dev(article, t3);
     			append_dev(article, h2);
     		},
     		p: noop,

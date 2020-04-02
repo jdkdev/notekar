@@ -277,12 +277,12 @@ $d-padding-y: $d-padding * 2;
 .p-none {
   padding: 0;
 }
-.p-x {
+.px {
   padding-left: $d-padding-x;
   padding-right: $d-padding-x;
 }
 
-.p-y {
+.py {
   padding-top: $d-padding-y;
   padding-bottom: $d-padding-y;
 }

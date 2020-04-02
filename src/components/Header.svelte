@@ -19,9 +19,11 @@
       <a class="" href={$url('/example')}>Examples</a>
     </article>
   {:else}
-    <article style="background-color: #000; color:#ccc;" class="p-xl">
+    <article style="background-color: #000; color:#ccc;" class="py">
       <h1 class="font-size-xxl" style="font-style:italic">
-        &lt;!-- Notekar -->
+        <span class="font-size-xl">&lt;!--</span>
+        Notekar
+        <span class="font-size-xl">--></span>
       </h1>
       <h2 class="pt">Make comments at your own risk....</h2>
     </article>
