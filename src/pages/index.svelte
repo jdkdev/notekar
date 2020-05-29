@@ -6,8 +6,8 @@
   <title>FrontierJS</title>
 </svelte:head>
 
-<section class="mb-auto p">
+<section class="p">
   <article>
-    <div class="mb-auto">Logged in: {$currentUser.email}</div>
+    <div class="">Logged in: {$currentUser.email}</div>
   </article>
 </section>

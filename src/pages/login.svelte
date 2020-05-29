@@ -36,9 +36,9 @@
   }
 </script>
 
-<section class="gx-span-full mb-auto" style="min-height:500px;">
-  <article class="">
-    <form>
+<section class="box _x@xs mt">
+  <article>
+    <form class="">
       <Field
         name="email"
         type="email"

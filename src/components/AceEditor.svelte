@@ -65,7 +65,7 @@
     //  set model value
     //  if no model value found – use slot content
     if (!value || value === "") dispatch("input", editor.getValue());
-    else editor.setValue(value + "hello", -1);
+    else editor.setValue(value + "", -1);
 
     //  editor value changes
     editor.on("change", () => {

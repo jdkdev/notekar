@@ -5,25 +5,28 @@
   import { isActive, url, goto } from "$router";
 </script>
 
-<header class="gx-span-full">
+<header>
   {#if $currentUser}
-    <article class="m">
-      <span class="stretch">
-        <span class="show-md">Logged in:</span>
-        {$currentUser.email}
-      </span>
-    </article>
-    <article class="row space-around">
-      <a class="p p-md" href={$url('/')}>Home</a>
+    <article class="[ fl block _y t ] h@vh _p">
+      <div>NOTEKAR</div>
+      <div>
+        <div class="dn d@lg">Logged in:</div>
+        <div class="">{$currentUser.email}</div>
+        <button class="link" on:click={$auth.logout()}>Logout</button>
+      </div>
+      <a class="" href={$url('/')}>Home</a>
       <a class="" href={$url('/dashboard')}>Dashboard</a>
       <a class="" href={$url('/example')}>Examples</a>
+      <a class="" href={$url('/brain2')}>Brain2</a>
+      <a class="" href={$url('/brain')}>Brain</a>
+      <span class="spacer" />
     </article>
   {:else}
-    <article style="background-color: #000; color:#ccc;" class="py">
-      <h1 class="font-size-xxl" style="font-style:italic">
-        <span class="font-size-xl">&lt;!--</span>
+    <article class="py bg-black v-grey vc">
+      <h1>
+        <span>&lt;!--</span>
         Notekar
-        <span class="font-size-xl">--></span>
+        <span>--></span>
       </h1>
       <h2 class="pt">Make comments at your own risk....</h2>
     </article>

@@ -7,18 +7,18 @@
   let number = 2;
 </script>
 
-<section class="gx-span-full">
-  <div>
-    <h1>Buttons</h1>
-    <button class="p-xxs">XXS Padding button</button>
-    <button class="p-xs">XS Padding button</button>
-    <button class="p-sm">SM Padding button</button>
-    <button class="p">Normal button</button>
-    <button class="p-md">MD Padding button</button>
-    <button class="p-lm">LM Padding button</button>
-    <button class="p-lg">LG Padding button</button>
-    <button class="p-xl">Xl Padding button</button>
-    <button class="p-xxl">XXl Padding button</button>
+<section class="">
+  <h1>Buttons</h1>
+  <div class="_m_">
+    <button class="p__">XXS Padding button</button>
+    <button class="p_">XS Padding button</button>
+    <button class="p--">SM Padding button</button>
+    <button class="p-">Normal button</button>
+    <button class="p">MD Padding button</button>
+    <button class="p+">LM Padding button</button>
+    <button class="p++">LG Padding button</button>
+    <button class="p*">Xl Padding button</button>
+    <button class="p**">XXl Padding button</button>
   </div>
   <Field name="name" value={name} />
   <Field name="email" type="email" value={email} />

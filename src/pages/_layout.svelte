@@ -19,8 +19,8 @@
   }
 </style>
 
-<main class=" sm-display-grid">
-  <Header />
+<Header />
+<main class="">
   <slot />
-  <Footer />
 </main>
+<Footer />

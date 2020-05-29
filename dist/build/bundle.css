@@ -1,7 +1,19 @@
 main.svelte-15d1vxx{overflow:hidden}
 .c-404.svelte-1qhtw59{text-align:center;padding:8rem 0}h1.svelte-1qhtw59{font-size:12.8rem;font-weight:500;color:#000}@media(prefers-color-scheme: dark){h1.svelte-1qhtw59{color:#FFF}}
+#cy.svelte-cyzaxm{width:100%;height:100%;position:absolute}
+.current-node.svelte-1a9c5oq{background-color:aliceblue}.border.svelte-1a9c5oq{border:1px solid black}.brain-grid-kanban.svelte-1a9c5oq{background:#eee;display:grid;grid-template-columns:1fr 1fr 1fr 20%;grid-template-rows:35px 30px 60px 1fr 150px;grid-template-areas:"menu menu menu menu"
+      "pins pins pins sidebar"
+      "current current current sidebar"
+      "descendants descendants descendants sidebar"
+      "crumbs crumbs crumbs sidebar"}.brain-grid.svelte-1a9c5oq{background:#eee;display:grid;grid-template-columns:1fr 1fr 1fr 30%;grid-template-rows:35px 30px 200px 200px 325px 150px;grid-template-areas:"menu menu menu menu"
+      "pins pins pins sidebar"
+      "associates fathers sibilings sidebar"
+      "associates current siblings sidebar"
+      "descendants descendants descendants sidebar"
+      "crumbs crumbs crumbs sidebar"}.menu.svelte-1a9c5oq{grid-area:menu}.father-nodes.svelte-1a9c5oq{grid-area:fathers}.descendants-nodes.svelte-1a9c5oq{grid-area:descendants;display:grid;grid-template-columns:repeat(auto-fit, minmax(270px, 1fr))}.sibling-nodes.svelte-1a9c5oq{grid-area:siblings}.associates-nodes.svelte-1a9c5oq{grid-area:associates}{}.current-node.svelte-1a9c5oq{grid-area:current}.pinned-nodes.svelte-1a9c5oq{grid-area:pins}.breadcrumbs.svelte-1a9c5oq{grid-area:crumbs}.sidebar.svelte-1a9c5oq{grid-area:sidebar}
 #file-editor.svelte-1x0oibi{min-width:60vw;overflow-y:scroll;max-height:60vh;padding-bottom:3rem;margin-bottom:5rem}#files-list.svelte-1x0oibi{overflow-y:scroll;max-height:60vh;padding-right:1rem;margin-bottom:1rem}
 #editor.svelte-nmb3tm{min-height:500px}
+.node-grid.svelte-1g9xur5.svelte-1g9xur5{background-color:#aaaaaa50;display:grid;grid-template-columns:5px 15px 1fr;grid-template-rows:10px 10px 5px 1fr;grid-template-areas:"father father father" "associate link name" "descendant descendant descendant" "other other other"}.other.svelte-1g9xur5.svelte-1g9xur5{grid-area:other}.father-link.svelte-1g9xur5.svelte-1g9xur5{visibility:hidden;grid-area:father;border:1px solid black;border-radius:50%;width:6px;height:6px;margin-top:-10px;cursor:pointer}.descendant-link.svelte-1g9xur5.svelte-1g9xur5{visibility:hidden;grid-area:descendant;border:1px solid black;border-radius:50%;width:8px;height:8px;margin-bottom:-3px;cursor:pointer;margin-right:-30px}.associate-link.svelte-1g9xur5.svelte-1g9xur5{visibility:hidden;grid-area:associate;border:1px solid black;border-radius:50%;margin-left:-8px;width:6px;height:6px;cursor:pointer}.node-link.svelte-1g9xur5.svelte-1g9xur5{grid-area:link}.node-name.svelte-1g9xur5.svelte-1g9xur5{grid-area:name}.border.svelte-1g9xur5.svelte-1g9xur5{border:1px solid transparent;border-radius:2px}.border.svelte-1g9xur5.svelte-1g9xur5:hover{border:1px solid #aaa}.link-hover.svelte-1g9xur5:hover>.father-link.svelte-1g9xur5,.link-hover.svelte-1g9xur5:hover>.associate-link.svelte-1g9xur5,.link-hover.svelte-1g9xur5:hover>.descendant-link.svelte-1g9xur5{visibility:visible}.main-node-border.svelte-1g9xur5.svelte-1g9xur5{border:1px solid #aaa}
 input.svelte-aqwxpj::-webkit-input-placeholder{text-transform:capitalize}input.svelte-aqwxpj::-moz-placeholder{text-transform:capitalize}input.svelte-aqwxpj:-ms-input-placeholder{text-transform:capitalize}input.svelte-aqwxpj::-ms-input-placeholder{text-transform:capitalize}input.svelte-aqwxpj::placeholder,label.svelte-aqwxpj{text-transform:capitalize}
 
 /*# sourceMappingURL=bundle.css.map */
